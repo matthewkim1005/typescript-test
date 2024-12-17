@@ -44,4 +44,16 @@ const arr: MyList = [];
 
 arr.push(1);
 arr.push('23');
-arr.push(false)
+arr.push(false);
+
+///Generics
+
+class Observable<T> {
+    constructor(public value: T) {}
+}
+
+let x: Observable<number>;
+
+let y: Observable<Person>;
+
+let z: Observable<23>;
